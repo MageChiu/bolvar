@@ -1,0 +1,7 @@
+kind: Service
+metadata:
+    creationTimestamp: null
+    name: test-gro
+spec: {}
+status:
+    loadBalancer: {}

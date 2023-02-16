@@ -1,5 +1,5 @@
 typemeta:
-    kind: ""
+    kind: Service
     apiversion: ""
 objectmeta:
     name: test-gro
