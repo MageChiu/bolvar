@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package api;
+
+option go_package = "/control/api";
+
+import "google/api/annotations.proto";
+
+// The greeting service definition
+service BolvarService {
+  // Sends a greeting
+  rpc CreateEvent (CreateEventRequest) returns (CreateEventReply) {
+    option (google.api.http) = {
+      post: "/v1/event/create"
+      body: "*"
+    };
+  }
+}
+
+// The request message containing the user's name
+message CreateEventRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings
+message CreateEventReply {
+  string message = 1;
+}
